@@ -1,0 +1,9 @@
+.content-container {
+    background-color: aquamarine;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.test {
+    height: 500px;
+}

@@ -1,0 +1,21 @@
+.main-app {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    position: fixed;
+    top: 0;
+}
+
+app-sidebar {
+    width: 20vw;
+    left: 0;
+    position: fixed;
+}
+
+app-content {
+    width: 80vw;
+    position: fixed;
+    right: 0;
+}

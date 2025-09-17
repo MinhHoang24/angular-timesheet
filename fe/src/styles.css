@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #f44336;
+    --primary-btn-color: #f24b50;
+    --green-color: #4caf50;
+    --blue-color: #a5cde0;
+    --pink-color: #fc787880;
+    --yellow-color: #fcef7880;
+    --red-color: #ff0000;
+    --black-color: #333;
+    --grey-color: #000000de;
+    --blue-color1: #00f;
+    --white-color: #fff;
+
+    --size-s: 12px;
+    --size-m: 16px;
+    --size-l: 20px;
+    --size-xl: 24px;
+    --size-2xl: 28px;
+    --size-3xl: 32px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
