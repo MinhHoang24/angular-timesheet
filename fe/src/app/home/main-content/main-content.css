@@ -1,8 +1,8 @@
 .main-content {
     background-color: aqua;
-    position: fixed;
     height: 1000px;
+    position: fixed;
     right: 0;
-    width: 80vw;
+    width: 100px;
     overflow-y: auto;
 }

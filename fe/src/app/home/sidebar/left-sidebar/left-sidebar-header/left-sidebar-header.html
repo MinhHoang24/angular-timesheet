@@ -1,0 +1,24 @@
+<div class="user-info">
+    <div class="user-info1">
+        <div class="image" title="Update Avatar">
+            <img src="https://do78x13wq0td.cloudfront.net/stg/avatars/host/20230419101303_31c9a47b-2a25-4792-9ed8-15e1722d4f38.jpg" alt="User">
+        </div>
+        <div>
+            <a href="#" class="my-profile-link">
+                <div class="name">admin admin</div>
+                <div class="email">admin@aspnetboilerplate.com</div>
+            </a>
+        </div>
+    </div>
+    <div class="btn-group user-helper-dropdown">
+        <i class="material-icons open-menu" (click)="openMenu($event)">keyboard_arrow_down</i>
+        <ul [ngClass]="{'show': isMenuOpen}" (click)="handleLogout()" class="dropdown-menu pull-right">
+            <li>
+                <a>
+                    <i class="material-icons logout">input</i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

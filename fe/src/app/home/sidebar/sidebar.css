@@ -1,7 +1,9 @@
 .main-side-bar {
-    height: 500px;
-    background-color: blueviolet;
-    width: 20vw;
+    width: 300px;
+    background-color: aqua;
     position: fixed;
     left: 0;
+    top: 85px;
+    height: calc(100vh - 85px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
 }
