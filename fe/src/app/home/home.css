@@ -1,0 +1,12 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-home {
+    display: flex;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    right: 0;
+}

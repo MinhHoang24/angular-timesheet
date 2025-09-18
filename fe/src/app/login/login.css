@@ -1,0 +1,26 @@
+.login-container {
+    margin: auto;
+    text-align: center;
+    max-width: 360px;
+}
+
+.login-logo {
+
+}
+
+.login-logo a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: var(--size-4xl);
+}
+
+.login-footer {
+    color: var(--white-color);
+    font-size: var(--size-s);
+    margin-top: var(--size-4xl);
+}
+
+.login-footer span {
+    font-weight: bold;
+}

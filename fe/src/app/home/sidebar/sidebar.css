@@ -1,0 +1,7 @@
+.main-side-bar {
+    height: 500px;
+    background-color: blueviolet;
+    width: 20vw;
+    position: fixed;
+    left: 0;
+}
