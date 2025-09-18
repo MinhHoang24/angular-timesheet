@@ -83,6 +83,7 @@ label.error {
 .check-remember-pw {
     display: flex;
     align-items: center;
+    column-gap: 8px;
 }
 
 #checkbox {
@@ -92,7 +93,7 @@ label.error {
 .check-remember-pw span {
     color: var(--grey-color1);
     font-weight: 700;
-    font-size: var(--size-s);
+    font-size: 14px;
     cursor: pointer;
 }
 

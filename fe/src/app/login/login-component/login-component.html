@@ -52,7 +52,7 @@
         <div class="login-submit">
             <div class="check-remember-pw" (click)="onParentClick($event)">
                 <input type="checkbox" name="checkbox" id="checkbox" [(ngModel)]="isChecked">
-                <span (click)="onCheckboxClick($event)">Remember me</span>
+                <span (click)="onCheckboxClick($event)">RememberMe</span>
             </div>
             <a href="#" [class.disabled]="!isFormValid()" (click)="onLoginClick($event)">Log in</a>
         </div>
