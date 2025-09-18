@@ -5,6 +5,7 @@ import { Sidebar } from "./sidebar/sidebar";
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [Header, MainContent, Sidebar],
   templateUrl: './home.html',
   styleUrl: './home.css'

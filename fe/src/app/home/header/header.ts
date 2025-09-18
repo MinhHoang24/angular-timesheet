@@ -3,6 +3,7 @@ import { SwitchLanguage } from './switch-language/switch-language';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   imports: [SwitchLanguage],
   templateUrl: './header.html',
   styleUrl: './header.css'

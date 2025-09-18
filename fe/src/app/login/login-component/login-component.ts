@@ -1,9 +1,11 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-component',
+  standalone: true,
   imports: [NgClass, FormsModule],
   templateUrl: './login-component.html',
   styleUrl: './login-component.css'
@@ -42,10 +44,9 @@ export class LoginComponent {
     if (!this.isFormValid()) {
       event.preventDefault();
     } else {
-      console.log('Form submitted');
+      console.log(this.username);
+      console.log(this.password);
       event.preventDefault();
-      console.log('username: ',this.username);
-      console.log('password: ',this.password);
     }
   }
 }
