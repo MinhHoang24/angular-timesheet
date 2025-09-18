@@ -44,8 +44,13 @@ export class LoginComponent {
     if (!this.isFormValid()) {
       event.preventDefault();
     } else {
-      console.log(this.username);
-      console.log(this.password);
+      const loginData = {
+        username: this.username,
+        password: this.password,
+        rememberMe: this.isChecked
+      };
+
+      console.log('Login Data:', loginData);
       event.preventDefault();
     }
   }
