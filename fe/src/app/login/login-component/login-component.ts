@@ -14,8 +14,7 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
   isFocused: { [key: string]: boolean } = { 'username': false, 'password': false };
-  
-  isChecked = false;
+  isChecked: boolean = false;
 
   isFormValid(): boolean {
     return this.username.trim() !== '' && this.password.trim() !== '' && this.isChecked;
@@ -45,9 +44,9 @@ export class LoginComponent {
       event.preventDefault();
     } else {
       const loginData = {
-        username: this.username,
+        userNameOrEmailAddress: this.username,
         password: this.password,
-        rememberMe: this.isChecked
+        rememberClient: this.isChecked
       };
 
       console.log('Login Data:', loginData);
