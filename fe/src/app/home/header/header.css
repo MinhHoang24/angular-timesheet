@@ -36,10 +36,3 @@
 .pull-right {
     text-decoration: none;
 }
-
-.fa-solid {
-    color: var(--white-color);
-    margin-left: var(--size-l);
-    font-size: var(--size-l);
-    font-weight: 900;
-}

@@ -2,6 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginService } from '../../../services/LoginService';
 
 @Component({
   selector: 'app-login-component',
@@ -15,6 +16,8 @@ export class LoginComponent {
   password: string = '';
   isFocused: { [key: string]: boolean } = { 'username': false, 'password': false };
   isChecked: boolean = false;
+
+  // constructor(private loginService: LoginService, private router: Router) {}
 
   isFormValid(): boolean {
     return this.username.trim() !== '' && this.password.trim() !== '' && this.isChecked;
@@ -48,9 +51,22 @@ export class LoginComponent {
         password: this.password,
         rememberClient: this.isChecked
       };
-
       console.log('Login Data:', loginData);
-      event.preventDefault();
+
+      // this.loginService.login(loginData).subscribe(
+      //   response => {
+      //     console.log('login successful', response);
+
+      //     if(response.accesToken) {
+      //       localStorage.setItem('accessToken', response.accessToken);
+      //     }
+      //     this.router.navigate(['/']);
+      //   },
+      //   error => {
+      //     console.log('login faile', error);
+      //   }
+      // );
     }
+
   }
 }
